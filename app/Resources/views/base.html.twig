@@ -1,13 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+        {% block stylesheets %}
+            <link href='//fonts.googleapis.com/css?family=Lato:400,900,400italic,700italic' rel='stylesheet'>
+
+            <link rel="stylesheet" media="all" href="https://production-assets.codepen.io/assets/global/global-MQ-5695f5bbfae7b3aea5305b19c41c23d9bdd3e633b45502a5f54318eb4cb64757.css" />
+            <link rel="stylesheet" media="all" href="https://production-assets.codepen.io/assets/page/page-MQ-1f698c34272515ebfca6a920b88146d298c43b40c276c8781a0f203fa6f5b51c.css" />
+
+            <link rel="stylesheet" media="screen" href="https://production-assets.codepen.io/assets/home/home-85feee0e4ffc7cc78ce850d90bc0428d0f77bdb7ad2464ee5a857eca408c0da1.css" />
+        {% endblock %}
+
+        {% block opengraph %}
+            <!-- Balises OpenGraph -->
+            <meta property="og:image" content="">
+            <meta property="og:title" content="CultureConfiture">
+            <meta property="og:description" content="La culture, c'est comme la confiture. Moins on en a, plus on l'étale">
+        {% endblock %}
+
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="mask-icon" type="" href="assets/favicon/logo-pin.svg" color="#111" />
+        <!--
+            <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-touch-icon-144x144.png">
+            <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-touch-icon-120x120.png">
+            <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon-76x76.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-touch-icon-152x152.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon-180x180.png">
+            <link rel="icon" type="image/png" href="assets/favicons/favicon-192x192.png" sizes="192x192">
+            <link rel="icon" type="image/png" href="assets/favicons/favicon-160x160.png" sizes="160x160">
+            <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96">
+            <link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16">
+            <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32">
+        -->
+
+        <!-- Analytics -->
+        <!--
+            <script async src="//www.google-analytics.com/analytics.js"></script>
+        -->
+
     </head>
     <body>
         {% block body %}{% endblock %}
+
+        {% include 'footer-one.html.twig' %}
+        {% include 'footer.html.twig' %}
+
         {% block javascripts %}{% endblock %}
     </body>
 </html>
