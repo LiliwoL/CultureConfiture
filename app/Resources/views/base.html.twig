@@ -47,14 +47,26 @@
         <!--
             <script async src="//www.google-analytics.com/analytics.js"></script>
         -->
-
     </head>
+
     <body>
+
+        {% include 'header.html.twig' %}
+
         {% block body %}{% endblock %}
 
         {% include 'footer-one.html.twig' %}
         {% include 'footer.html.twig' %}
 
         {% block javascripts %}{% endblock %}
+
+        <style>
+            h1.logo.header-chunk a
+            {
+                background-image: url( {{ asset('assets/design/logo_blanc.png') }}) !important;
+            }
+        </style>
+
     </body>
+
 </html>
