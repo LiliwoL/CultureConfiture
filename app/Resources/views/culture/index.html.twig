@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}1. Culture{% endblock %}
+
+{% block body %}
+
+    <div class="page-wrap">
+
+        <header class="marketing-promo">
+
+            <div class="promo-content">
+
+                <svg class="promo-logo">
+                    <use xlink:href="#codepen-box"></use>
+                </svg>
+                <svg class="promo-logo promo-logo-2">
+                    <use xlink:href="#codepen-box"></use>
+                </svg>
+
+                <h1>
+                    Your Team, on CodePen
+                </h1>
+
+                <p>CodePen PRO Teams are for working together.</p>
+
+                <a href="/signup/" class="button button-no-right-margin green big">
+                    Sign Up
+                </a>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <section class="feature-row feature-row-shared-billing">
+
+                <figure class="figure half">
+                    <img alt="Example of Team Leader and Receipt" src="https://production-assets.codepen.io/assets/marketing/teams/team-leader-and-reciept-e417c9d70de76c5a1ece457bc118faa39d94caef60a13855104f5ea557823267.jpg">
+                </figure>
+
+                <div class="text half">
+                    <h2>Teams have shared billing and are managed by an owner.</h2>
+
+                    <p>Part of the convenience of PRO Teams is that the billing is combined. Only one payment needs to be made that covers all members. Team size can be adjusted so you're just paying for what you need.</p>
+
+                    <p>The Team Owner can add and remove Team Members at any time, and the ownership of the Team can be transferred at any time.</p>
+                </div>
+
+            </section>
+
+            <section class="feature-row feature-row-center feature-row-questions">
+
+                <div class="text half">
+                    <h2>Des questions?</h2>
+
+                    <p>Ecrivez nous!</p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+{% endblock %}
+
+{% block stylesheets %}
+    <link href='//fonts.googleapis.com/css?family=Lato:400,900,400italic,700italic' rel='stylesheet'>
+
+    <link rel="stylesheet" media="all" href="https://production-assets.codepen.io/assets/global/global-MQ-5695f5bbfae7b3aea5305b19c41c23d9bdd3e633b45502a5f54318eb4cb64757.css">
+
+    <link rel="stylesheet" media="all" href="https://production-assets.codepen.io/assets/page/page-MQ-1f698c34272515ebfca6a920b88146d298c43b40c276c8781a0f203fa6f5b51c.css">
+
+    <link rel="stylesheet" media="screen" href="https://production-assets.codepen.io/assets/marketing/marketing-07c9262262589ad3ffcd1e18c9d6bcac03c885b24a54fa888f147472dddf22e6.css">
+
+    <link rel="stylesheet" media="screen" href="https://production-assets.codepen.io/assets/marketing/teams-d9f26b2ffae73e7dce8b7b86beb37d58358e7997b8fd41657eeb42321b727b33.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+
+    <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+{% endblock %}

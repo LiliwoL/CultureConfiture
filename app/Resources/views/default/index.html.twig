@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}CultureConfiture{% endblock %}
+
 {% block body %}
 
     <section class="home-section home-promo">
@@ -34,7 +36,7 @@
         </div>
 
         <div class="promo-landing-page-links">
-            <a href="/pro/teams/">
+            <a href="{{ url('culture') }}">
                 <span class="codepen-for">Sélectionner un pot de</span>
                 <span class="promo-for">Culture</span>
             </a>
@@ -192,37 +194,3 @@
     </div>
 
 {% endblock %}
-
-
-{% block javascripts %}
-    <div id="popup-overlay" class="overlay popup-overlay"></div>
-    <div id="modal-overlay" class="overlay modal-overlay"></div>
-
-    <noscript>
-
-        <input type="checkbox" class="modal-closing-trick" id="modal-closing-trick">
-
-        <div class="overlay noscript-overlay" style="display: block;"></div>
-
-        <div class="modal modal-message group modal-warning">
-
-            <div class="modal-title">CodePen doesn't work very well without JavaScript.</div>
-
-            <p>We're all for progressive enhancement, but CodePen is a bit unique in that it's all about writing and showing front end code, including JavaScript. It's required to use most of the features of CodePen.</p>
-
-            <p>Need to know how to enable it? <a href="http://enable-javascript.com/" target="_blank">Go here.</a></p>
-
-            <label class="button button-medium" for="modal-closing-trick">Close this, use anyway.</label>
-
-        </div>
-
-    </noscript>
-
-    <input type="hidden" id="init-data" value="{&quot;__mobile&quot;:false,&quot;__cookieUsed&quot;:true,&quot;__turnOffJS&quot;:false,&quot;__CPDATA&quot;:{&quot;host&quot;:&quot;codepen.io&quot;,&quot;asset_host&quot;:&quot;production-assets.codepen.io&quot;,&quot;embed_asset_host&quot;:&quot;production-assets.codepen.io&quot;,&quot;host_port&quot;:&quot;&quot;,&quot;host_secure_subdomain&quot;:&quot;s.&quot;,&quot;iframe_sandbox&quot;:&quot;allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-modals allow-forms&quot;},&quot;__env&quot;:&quot;prod&quot;,&quot;__browserName&quot;:&quot;Firefox&quot;,&quot;__remote_addr&quot;:&quot;2a01:0e34:efd4:b490:a04b:7775:52dd:2359&quot;,&quot;__user&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;base_url&quot;:&quot;/anon/&quot;,&quot;current_team_id&quot;:0,&quot;paid&quot;:false,&quot;plan_type&quot;:&quot;free&quot;,&quot;session_hash&quot;:&quot;&quot;},&quot;__pages&quot;:[{&quot;grid_id&quot;:&quot;picks-grid&quot;,&quot;grid_url&quot;:&quot;/home/grid/2/&quot;,&quot;page_type&quot;:&quot;picks&quot;,&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;js_global_name&quot;:&quot;__pages&quot;,&quot;prev_grid_url&quot;:&quot;/home/grid/&quot;,&quot;next_grid_url&quot;:&quot;/home/grid/3/&quot;,&quot;page_url&quot;:&quot;/picks/2/&quot;,&quot;page_is_main_grid&quot;:true}],&quot;__pageType&quot;:&quot;home&quot;}">
-
-    <script src="https://production-assets.codepen.io/assets/common/everypage-4deb0db132744fb0c87cc719fe7b42ba955814162f416661abbb0f68fb6b7846.js"></script>
-
-
-
-    <script src="https://production-assets.codepen.io/assets/home/home-3761f45993e531ef6d2d34d1ab41782161290a8ef8c0cb42a51e16c275c0d7b3.js"></script>
-{%  endblock %}
